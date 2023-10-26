@@ -7,13 +7,24 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Run Editor",
-            "program": "${workspaceFolder}/bin/godot.macos.editor.arm64",
+            "name": "Launch Editor",
+            "program": "${workspaceFolder}/bin/godot.macos.editor.dev.arm64.mono",
             // Change the arguments below for the project you want to test with.
             // To run the project instead of editing it, remove the "--editor" argument.
-            // "args": [ "--headless" ],
+            // "args": [ "--path", "/Users/joker/Desktop/godot_test" ],
             "cwd": "${workspaceFolder}",
-            // "preLaunchTask": "build",
+            "preLaunchTask": "build editor",
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Launch Player",
+            "program": "${workspaceFolder}/bin/godot.macos.template_debug.dev.arm64.mono",
+            // Change the arguments below for the project you want to test with.
+            // To run the project instead of editing it, remove the "--editor" argument.
+            "args": [ "--path", "/Users/joker/Desktop/godot_test" ],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build player",
         }
     ]
 }
