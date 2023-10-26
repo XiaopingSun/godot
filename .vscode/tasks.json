@@ -1,0 +1,23 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "group": "build",
+            "type": "shell",
+            "command": "scons",
+            "args": [
+                "platform=macos", // Change to your current platform
+                // "target=editor",
+                "target=template_debug",
+                "vulkan_sdk_path=/Users/joker/Workspace/VulkanSDK/1.3.239.0",
+                "module_mono_enabled=yes",
+                "dev_build=yes",
+                "-j8" // depends on your machine
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
