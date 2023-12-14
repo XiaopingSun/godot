@@ -10,7 +10,7 @@
             "command": "scons",
             "args": [
                 "platform=macos", // Change to your current platform
-                // "target=editor",
+                "target=editor",
                 // "target=template_debug",
                 "vulkan_sdk_path=/Users/joker/Workspace/VulkanSDK/1.3.239.0",
                 "module_mono_enabled=yes",
@@ -26,7 +26,6 @@
             "command": "scons",
             "args": [
                 "platform=macos", // Change to your current platform
-                // "target=editor",
                 "target=template_debug",
                 "vulkan_sdk_path=/Users/joker/Workspace/VulkanSDK/1.3.239.0",
                 "module_mono_enabled=yes",
