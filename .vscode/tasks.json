@@ -9,13 +9,12 @@
             "type": "shell",
             "command": "scons",
             "args": [
-                "platform=macos", // Change to your current platform
+                "platform=macos",
                 "target=editor",
-                // "target=template_debug",
                 "vulkan_sdk_path=/Users/joker/Workspace/VulkanSDK/1.3.239.0",
-                "module_mono_enabled=yes",
+                // "module_mono_enabled=yes", // support c#
                 "dev_build=yes",
-                "-j8" // depends on your machine
+                "-j8"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -25,12 +24,12 @@
             "type": "shell",
             "command": "scons",
             "args": [
-                "platform=macos", // Change to your current platform
+                "platform=macos",
                 "target=template_debug",
                 "vulkan_sdk_path=/Users/joker/Workspace/VulkanSDK/1.3.239.0",
-                "module_mono_enabled=yes",
+                // "module_mono_enabled=yes", // support c#
                 "dev_build=yes",
-                "-j8" // depends on your machine
+                "-j8"
             ],
             "problemMatcher": "$msCompile"
         }

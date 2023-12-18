@@ -5,9 +5,7 @@
             "type": "lldb",
             "request": "launch",
             "name": "Launch Editor",
-            "program": "${workspaceFolder}/bin/godot.macos.editor.dev.arm64.mono",
-            // Change the arguments below for the project you want to test with.
-            // To run the project instead of editing it, remove the "--editor" argument.
+            "program": "${workspaceFolder}/bin/godot.macos.editor.dev.arm64",
             // "args": [ "--path", "/Users/joker/Desktop/godot_test" ],
             "args": [ "--verbose" ],
             "cwd": "${workspaceFolder}",
@@ -17,9 +15,7 @@
             "type": "lldb",
             "request": "launch",
             "name": "Launch Player",
-            "program": "${workspaceFolder}/bin/godot.macos.template_debug.dev.arm64.mono",
-            // Change the arguments below for the project you want to test with.
-            // To run the project instead of editing it, remove the "--editor" argument.
+            "program": "${workspaceFolder}/bin/godot.macos.template_debug.dev.arm64",
             "args": [ "--path", "/Users/joker/Desktop/godot_test" ],
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "build player",
