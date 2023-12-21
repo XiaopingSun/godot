@@ -16,7 +16,7 @@
             "request": "launch",
             "name": "Launch Player",
             "program": "${workspaceFolder}/bin/godot.macos.template_debug.dev.arm64",
-            "args": [ "--path", "/Users/joker/Desktop/godot_test" ],
+            "args": [ "--path", "/Users/joker/Desktop/godot_test/gui_in_3d" ],
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "build player",
         }
