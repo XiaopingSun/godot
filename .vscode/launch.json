@@ -1,22 +1,41 @@
 {
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "lldb",
+        // {
+        //     "type": "lldb",
+        //     "request": "launch",
+        //     "name": "Launch Editor",
+        //     "program": "${workspaceFolder}/bin/godot.macos.editor.dev.arm64",
+        //     // "args": [ "--path", "/Users/joker/Desktop/godot_test" ],
+        //     "args": [ "--verbose" ],
+        //     "cwd": "${workspaceFolder}",
+        //     "preLaunchTask": "build editor",
+        // },
+        // {
+        //     "type": "lldb",
+        //     "request": "launch",
+        //     "name": "Launch Player",
+        //     "program": "${workspaceFolder}/bin/godot.macos.template_debug.dev.arm64",
+        //     "args": [ "--path", "/Users/joker/Desktop/godot_test/gui_in_3d" ],
+        //     "cwd": "${workspaceFolder}",
+        //     "preLaunchTask": "build player",
+        // }
+		{
+            "type": "cppvsdbg",
             "request": "launch",
             "name": "Launch Editor",
-            "program": "${workspaceFolder}/bin/godot.macos.editor.dev.arm64",
+            "program": "${workspaceFolder}/bin/godot.windows.editor.dev.x86_64.exe",
             // "args": [ "--path", "/Users/joker/Desktop/godot_test" ],
             "args": [ "--verbose" ],
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "build editor",
         },
         {
-            "type": "lldb",
+            "type": "cppvsdbg",
             "request": "launch",
             "name": "Launch Player",
-            "program": "${workspaceFolder}/bin/godot.macos.template_debug.dev.arm64",
-            "args": [ "--path", "/Users/joker/Desktop/godot_test/gui_in_3d" ],
+            "program": "${workspaceFolder}/bin/godot.windows.template_debug.dev.x86_64.exe",
+            "args": [ "--path", "C:/Users/mkmbsha/Downloads/godot_test/godot_test/gui_in_3d" ],
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "build player",
         }
